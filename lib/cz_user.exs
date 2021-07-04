@@ -5,7 +5,6 @@ defmodule CzUser do
   def wait_for_messages do
     receive do
       {:basic_deliver, payload, _meta} ->
-        IO.puts("entrou")
         {_status, list} = JSON.decode(payload)
         CheckinCreate.call(list)
         wait_for_messages()

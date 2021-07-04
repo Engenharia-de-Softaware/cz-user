@@ -2,9 +2,9 @@ defmodule CzUser.CheckIn do
   use Ecto.Schema
   import Ecto.Changeset
 
-  @primary_key{:id, :binary_id, autogenerate: true}
+  # @primary_key{:id, :binary_id, autogenerate: true}
   @required_params [:longitude, :latitude, :user_id]
-  @derive {Jason.Encoder, only: [:id, :longitude, :latitude, :user_id]}
+  @derive {Jason.Encoder, only: [:longitude, :latitude, :user_id]}
 
   schema "check_in" do
     field :user_id, :string

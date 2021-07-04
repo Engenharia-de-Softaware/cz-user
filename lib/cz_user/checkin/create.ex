@@ -1,5 +1,5 @@
 defmodule CzUser.CheckIn.Create do
-  alias CzUser.{Error, Repo, CheckIn}
+  alias CzUser.{CheckIn, Error, Repo}
 
   def call(params) do
     params
