@@ -6,7 +6,7 @@ defmodule CzUser.CheckIn do
   @required_params [:longitude, :latitude, :user_id]
   @derive {Jason.Encoder, only: [:longitude, :latitude, :user_id]}
 
-  schema "check_in" do
+  schema "user_check_in" do
     field :user_id, :string
     field :longitude, :string
     field :latitude, :string

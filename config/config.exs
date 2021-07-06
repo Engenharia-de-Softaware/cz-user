@@ -10,9 +10,9 @@ use Mix.Config
 config :cz_user,
   ecto_repos: [CzUser.Repo]
 
-config :cz_user, CzUser.Repo,
- migration_primary_key: [type: :binary_id],
- migration_foreign_key: [type: :binary_id]
+# config :cz_user, CzUser.Repo,
+#  migration_primary_key: [type: :binary_id],
+#  migration_foreign_key: [type: :binary_id]
 
 # Configures the endpoint
 config :cz_user, CzUserWeb.Endpoint,
