@@ -3,12 +3,12 @@ defmodule CzUser.Repo.Migrations.CreateUserCheckInTable do
 
   def change do
 
-    create table :user_check_in do
+    create table :user_check_ins do
       add :user_id, :string
       add :latitude, :string
       add :longitude, :string
 
-      timestamps()
+      # timestamps()
     end
   end
 end

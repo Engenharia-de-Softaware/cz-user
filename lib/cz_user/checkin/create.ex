@@ -4,7 +4,7 @@ defmodule CzUser.CheckIn.Create do
   def call(params) do
     params
     |> CheckIn.changeset()
-    |> IO.inspect()
+    # |> IO.inspect()
     |> Repo.insert()
     |> handle_insert()
   end

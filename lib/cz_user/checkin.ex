@@ -6,12 +6,12 @@ defmodule CzUser.CheckIn do
   @required_params [:longitude, :latitude, :user_id]
   @derive {Jason.Encoder, only: [:longitude, :latitude, :user_id]}
 
-  schema "user_check_in" do
+  schema "user_check_ins" do
     field :user_id, :string
     field :longitude, :string
     field :latitude, :string
 
-  timestamps()
+  # timestamps()
   end
 
   def changeset(struct \\ %__MODULE__{}, params) do
